@@ -5,8 +5,6 @@ import time
 
 
 
-#Using  Object oriented programming
-
 
 # each object of chunbk server has a ip, port, chunk_server_id, master server ip, master port
 class ChunkServer:

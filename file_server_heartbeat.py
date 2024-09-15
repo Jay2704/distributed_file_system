@@ -4,7 +4,7 @@ import time
 class FileServer:
     def __init__(self, server_id, role, master_ip, master_port, heartbeat_interval=5):
         self.server_id = server_id
-        self.role = role  # 'primary' or 'secondary'
+        self.role = role  # ex: primary
         self.master_ip = master_ip
         self.master_port = master_port
         self.heartbeat_interval = heartbeat_interval
@@ -21,6 +21,6 @@ class FileServer:
             except Exception as e:
                 print(f"Failed to send heartbeat from server {self.server_id}: {e}")
 
-# Example usage
+
 file_server = FileServer(server_id=1, role='secondary', master_ip='192.168.1.100', master_port=5000)
 file_server.send_heartbeat()

@@ -5,16 +5,6 @@ import time
 
 
 class ChunkServer:
-    """
-    Chunk Server 2 for Distributed File System
-    
-    This class implements a chunk server that:
-    - Stores and manages file chunks locally
-    - Handles file operations (create, read, write, delete)
-    - Communicates with the master server for metadata updates
-    - Implements file locking for concurrent access control
-    - Provides fault tolerance through replication
-    """
 
     def __init__(self, ip, port, chunk_server_id, master_ip, master_port):
         

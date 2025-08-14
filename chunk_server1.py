@@ -17,16 +17,7 @@ class ChunkServer:
     """
 
     def __init__(self, ip, port, chunk_server_id, master_ip, master_port):
-        """
-        Initialize the Chunk Server
-        
-        Args:
-            ip (str): IP address to bind the chunk server to
-            port (int): Port number to listen on
-            chunk_server_id (int): Unique identifier for this chunk server
-            master_ip (str): IP address of the master server
-            master_port (int): Port number of the master server
-        """
+       
         self.ip = ip
         self.port = port
         self.chunk_server_id = chunk_server_id

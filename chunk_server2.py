@@ -69,12 +69,7 @@ class ChunkServer:
         self.send_to_master_server(chunk_server_info)
 
     def send_to_master_server(self, message):
-        """
-        Send a message to the master server
         
-        Args:
-            message (str): Message to send to the master server
-        """
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as master_socket:
             master_socket.connect((self.master_ip, self.master_port))
             master_socket.send(message.encode())

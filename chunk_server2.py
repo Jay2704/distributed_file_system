@@ -34,11 +34,6 @@ class ChunkServer:
         self.register_with_master()
 
     def create_chunk_server_directory_if_not_exists(self):
-        """
-  
-        
-  
-        """
         directory_path = os.path.join(os.getcwd(), self.chunk_server_directory)
         os.makedirs(directory_path, exist_ok=True)
         print(f"Chunk Server {self.chunk_server_id} directory: {directory_path}")

@@ -37,7 +37,7 @@ class ChunkServer:
         """
         Create the chunk server's dedicated directory if it doesn't exist
         
-        This ensures each chunk server has its own isolated storage space.
+  
         """
         directory_path = os.path.join(os.getcwd(), self.chunk_server_directory)
         os.makedirs(directory_path, exist_ok=True)
